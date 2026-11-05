@@ -306,31 +306,87 @@
   border-top: 1px solid rgba(255, 255, 255, 0.07);
 }
 
+/* Floating Technology Tags */
+
 .floating-tag {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
   padding: 11px 15px;
-  border: 1px solid rgba(167, 139, 250, 0.25);
-  border-radius: 8px;
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  border-radius: 30px;
   background: rgba(24, 22, 38, 0.95);
   color: #ddd6fe;
   font-size: 11px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  font-weight: 600;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+  animation: floatTag 4s ease-in-out infinite;
 }
 
+.tag-icon {
+  font-size: 15px;
+}
+
+/* Individual Positions */
+
 .tag-android {
-  top: 55px;
-  right: 0;
+  top: 45px;
+  left: -15px;
+  border-color: rgba(52, 211, 153, 0.5);
+  animation-delay: 0s;
 }
 
 .tag-kotlin {
-  bottom: 85px;
-  left: -10px;
+  bottom: 75px;
+  right: -15px;
+  border-color: rgba(34, 211, 238, 0.5);
+  animation-delay: 0.5s;
+}
+
+.tag-react {
+  top: 5px;
+  right: 5px;
+  border-color: rgba(139, 92, 246, 0.6);
+  animation-delay: 1s;
+}
+
+.tag-agents {
+  top: 155px;
+  right: -35px;
+  border-color: rgba(96, 165, 250, 0.6);
+  animation-delay: 1.5s;
+}
+
+.tag-rag {
+  bottom: 155px;
+  left: -35px;
+  border-color: rgba(192, 132, 252, 0.6);
+  animation-delay: 2s;
 }
 
 .tag-ai {
-  bottom: 15px;
-  right: 25px;
+  bottom: 5px;
+  left: 25px;
+  border-color: rgba(167, 139, 250, 0.5);
+  animation-delay: 2.5s;
+}
+
+/* Floating Animation */
+
+@keyframes floatTag {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-9px);
+  }
 }
 
 /* Temporary section placeholders */
@@ -432,11 +488,33 @@
   }
 
   .tag-android {
+    top: 20px;
+    left: 0;
+  }
+
+  .tag-react {
+    top: 0;
     right: 0;
   }
 
-  .tag-kotlin {
+  .tag-agents {
+    top: 125px;
+    right: 0;
+  }
+
+  .tag-rag {
+    bottom: 130px;
     left: 0;
+  }
+
+  .tag-kotlin {
+    bottom: 65px;
+    right: 0;
+  }
+
+  .tag-ai {
+    bottom: 0;
+    left: 10px;
   }
 }
 

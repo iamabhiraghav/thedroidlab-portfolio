@@ -122,9 +122,35 @@ function App() {
             </div>
           </div>
 
-          <div className="floating-tag tag-android">Android Development</div>
-          <div className="floating-tag tag-kotlin">Kotlin · Compose</div>
-          <div className="floating-tag tag-ai">AI Explorer ✦</div>
+          <div className="floating-tag tag-android">
+            <span className="tag-icon">🤖</span>
+            Android Development
+          </div>
+
+          <div className="floating-tag tag-kotlin">
+            <span className="tag-icon">⚡</span>
+            Kotlin · Compose
+          </div>
+
+          <div className="floating-tag tag-react">
+            <span className="tag-icon">⚛</span>
+            React Native
+          </div>
+
+          <div className="floating-tag tag-agents">
+            <span className="tag-icon">✧</span>
+            AI Agents
+          </div>
+
+          <div className="floating-tag tag-rag">
+            <span className="tag-icon">◈</span>
+            RAG Implementation
+          </div>
+
+          <div className="floating-tag tag-ai">
+            <span className="tag-icon">✦</span>
+            AI Explorer
+          </div>
         </div>
       </main>
 
