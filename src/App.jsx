@@ -45,7 +45,7 @@ function App() {
           </h1>
 
           <p className="hero-description">
-            Senior Android Developer with 10 years of experience
+            Senior Mobile Developer with 10 years of experience
             building scalable mobile applications and intuitive
             digital experiences. Passionate about Android, Kotlin,
             React Native and emerging AI technologies.
