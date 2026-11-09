@@ -832,8 +832,6 @@ function App() {
 
         {/* Section Heading */}
         <div className="experience-heading">
-          <span className="experience-eyebrow">03 / EXPERIENCE</span>
-
           <h2>
             A journey built on
             <br />
