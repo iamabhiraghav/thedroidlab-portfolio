@@ -155,9 +155,189 @@ function App() {
       </main>
 
       {/* Sections will be developed in the next steps */}
-      <section id="about" className="placeholder-section">
-        <span>01 / ABOUT</span>
-        <h2>More than just writing code.</h2>
+      {/* About Section */}
+
+      {/* About Section */}
+      <section id="about" className="about-section">
+
+        {/* Section Heading */}
+        <div className="about-heading">
+          <h2>
+            More than just
+            <span className="gradient-text"> writing code.</span>
+          </h2>
+
+          <p>
+            I turn ideas into reliable, meaningful mobile experiences.
+            Here's a little about my journey and what drives me.
+          </p>
+        </div>
+
+        {/* Full Width Glass Card */}
+        <div className="about-main-card">
+
+          {/* Left Side - Personal Introduction */}
+          <div className="about-person">
+
+            <div className="about-label">
+              <span className="status-dot"></span>
+              THE PERSON BEHIND THE CODE
+            </div>
+
+            <h3>
+              Hi, I'm <span>Abhishek Raghav.</span>
+            </h3>
+
+            <p>
+              Senior Application Developer with 10 years of
+              experience building scalable, reliable, and user-focused
+              digital solutions across diverse industries.
+            </p>
+
+            <p>
+              My professional journey spans GPS-GIS solutions, healthcare
+              platforms for government and private organisations, and
+              enterprise applications. I've had the opportunity to work
+              with Accenture, contribute to a Google Play partnership
+              project at Google, and currently work with Allcargo Logistics,
+              building technology solutions for the logistics domain.
+            </p>
+
+            <p>
+              With a strong foundation in Application development, I enjoy
+              solving complex engineering challenges, exploring emerging
+              technologies, and expanding my expertise into AI-powered
+              applications. I'm driven by continuous learning and the
+              opportunity to turn innovative ideas into meaningful products.
+            </p>
+
+            <a href="#contact" className="about-connect">
+              Let's connect <span>↗</span>
+            </a>
+
+          </div>
+
+          {/* Right Side - Technology Card */}
+          <div className="about-tech-card">
+
+            <div className="about-tech-header">
+              <div>
+                <span className="about-tech-eyebrow">
+                  MY TECH STACK
+                </span>
+                <h3>Technology I work with.</h3>
+              </div>
+
+              <span className="tech-header-icon">✦</span>
+            </div>
+
+            {/* Android */}
+            <div className="tech-item">
+              <div className="tech-icon android-icon">A</div>
+              <div className="tech-info">
+                <h4>Android Development</h4>
+                <p>Native Android Application Development</p>
+                <div className="tech-tags">
+                  <span>Kotlin</span>
+                  <span>Java</span>
+                  <span>Jetpack Compose</span>
+                  <span>Room</span>
+                  <span>MVVM</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Cross Platform */}
+            <div className="tech-item">
+              <div className="tech-icon react-icon">⚛</div>
+              <div className="tech-info">
+                <h4>Cross-platform & Web Development</h4>
+                <p>Building applications across platforms</p>
+                <div className="tech-tags">
+                  <span>React Native</span>
+                  <span>Expo</span>
+                  <span>Vite</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Backend and Cloud */}
+            <div className="tech-item">
+              <div className="tech-icon cloud-icon">◈</div>
+              <div className="tech-info">
+                <h4>Backend & Cloud</h4>
+                <p>API Integration, Cloud Services & Databases</p>
+                <div className="tech-tags">
+                  <span>REST APIs</span>
+                  <span>GraphQL APIs</span>
+                  <span>Supabase</span>
+                  <span>Firebase</span>
+                  <span>SQL</span>
+                  <span>PostgreSQL</span>
+                </div>
+              </div>
+            </div>
+
+            {/* UI/UX and Design */}
+            <div className="tech-item">
+              <div className="tech-icon design-icon">✎</div>
+              <div className="tech-info">
+                <h4>UI/UX & Product Design</h4>
+                <p>Designing intuitive and modern user experiences</p>
+                <div className="tech-tags">
+                  <span>Figma</span>
+                  <span>Google Stitch</span>
+                </div>
+              </div>
+            </div>
+
+            {/* AI */}
+            <div className="tech-item">
+              <div className="tech-icon ai-icon">✧</div>
+              <div className="tech-info">
+                <h4>AI & Emerging Technologies</h4>
+                <p>AI Agents · RAG · Generative AI</p>
+                <div className="tech-tags">
+                  <span>Learning</span>
+                  <span>Experimenting</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="about-tech-footer">
+              <span className="status-dot"></span>
+              Always learning. Always building.
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Career Highlights */}
+        <div className="about-bottom-stats">
+
+          <div>
+            <strong>2014</strong>
+            <span>Started my journey</span>
+          </div>
+
+          <div>
+            <strong>4+</strong>
+            <span>Professional roles</span>
+          </div>
+
+          <div>
+            <strong>Multiple</strong>
+            <span>Domains & products</span>
+          </div>
+
+          <div>
+            <strong>Always</strong>
+            <span>Learning & building</span>
+          </div>
+
+        </div>
+
       </section>
 
       <section id="skills" className="placeholder-section">
@@ -175,10 +355,186 @@ function App() {
         <h2>Things I've built.</h2>
       </section>
 
-      <section id="contact" className="placeholder-section">
-        <span>05 / CONTACT</span>
-        <h2>Let's build something together.</h2>
+
+      {/* Contact Section */}
+      <section id="contact" className="contact-section">
+
+        <div className="contact-heading">
+          <h2>
+            Let's create something
+            <br />
+            <span className="gradient-text">extraordinary.</span>
+          </h2>
+
+          <p>
+            Have an idea, an opportunity, or just want to talk technology?
+            I'd love to hear from you. Let's connect and build something
+            meaningful together.
+          </p>
+        </div>
+
+        <div className="contact-glass-card">
+
+          {/* Card Header */}
+          <div className="contact-card-header">
+            <div>
+              <span className="contact-label">CONTACT DETAILS</span>
+              <h3>Let's connect.</h3>
+            </div>
+
+            <div className="contact-online">
+              <span className="status-dot"></span>
+              Open to conversations
+            </div>
+          </div>
+
+          {/* Phone and WhatsApp */}
+          <div className="contact-group">
+            <div className="contact-group-title">
+              <span className="contact-icon">☎</span>
+              <div>
+                <h4>Phone & WhatsApp</h4>
+                <p>Reach me directly</p>
+              </div>
+            </div>
+
+            <div className="phone-list">
+
+              <div className="phone-item">
+                <div className="phone-info">
+                  <span className="phone-number">+91 97167 06167</span>
+                  <span className="phone-type">Primary contact</span>
+                </div>
+
+                <div className="phone-actions">
+                  <a
+                    href="tel:+919716706167"
+                    className="contact-action call-action"
+                    aria-label="Call primary number"
+                    title="Call"
+                  >
+                    ☎
+                  </a>
+
+                  <a
+                    href="https://wa.me/919716706167"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="contact-action whatsapp-action"
+                    aria-label="WhatsApp primary number"
+                    title="WhatsApp"
+                  >
+                    ↗
+                  </a>
+                </div>
+              </div>
+
+              <div className="phone-item">
+                <div className="phone-info">
+                  <span className="phone-number">+91 75575 51756</span>
+                  <span className="phone-type">Alternate contact</span>
+                </div>
+
+                <div className="phone-actions">
+                  <a
+                    href="tel:+917557551756"
+                    className="contact-action call-action"
+                    aria-label="Call alternate number"
+                    title="Call"
+                  >
+                    ☎
+                  </a>
+
+                  <a
+                    href="https://wa.me/917557551756"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="contact-action whatsapp-action"
+                    aria-label="WhatsApp alternate number"
+                    title="WhatsApp"
+                  >
+                    ↗
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div className="contact-divider"></div>
+
+          {/* Social Profiles */}
+          <div className="contact-group">
+            <div className="contact-group-title">
+              <span className="contact-icon">◎</span>
+              <div>
+                <h4>Find me online</h4>
+                <p>Connect through my social profiles</p>
+              </div>
+            </div>
+
+            <div className="social-grid">
+
+              <a
+                href="https://www.linkedin.com/in/abhishek-raghav-3a9351b6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-card linkedin-card"
+              >
+                <div className="social-icon">in</div>
+                <div className="social-info">
+                  <h4>LinkedIn</h4>
+                  <p>Professional network</p>
+                </div>
+                <span className="social-arrow">↗</span>
+              </a>
+
+              <a
+                href="https://www.instagram.com/thedroidlab/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-card instagram-card"
+              >
+                <div className="social-icon">◎</div>
+                <div className="social-info">
+                  <h4>Instagram</h4>
+                  <p>@thedroidlab</p>
+                </div>
+                <span className="social-arrow">↗</span>
+              </a>
+
+              <a
+                href="https://github.com/iamabhiraghav"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-card github-card"
+              >
+                <div className="social-icon">⌘</div>
+                <div className="social-info">
+                  <h4>GitHub</h4>
+                  <p>Code & projects</p>
+                </div>
+                <span className="social-arrow">↗</span>
+              </a>
+
+            </div>
+          </div>
+
+          {/* Card Footer */}
+          <div className="contact-card-footer">
+            <span>THE DROID LAB</span>
+            <span>Let's build what's next. ✦</span>
+          </div>
+
+        </div>
+
+        <div className="contact-bottom-note">
+          <span className="status-dot"></span>
+          Available for interesting conversations and opportunities
+        </div>
+
       </section>
+
 
       <footer className="footer">
         © {new Date().getFullYear()} The Droid Lab. Built with passion and code.
