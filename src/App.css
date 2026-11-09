@@ -24,7 +24,7 @@
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   z-index: 1000;
 
@@ -3440,4 +3440,69 @@
 
 .navbar .nav-button:hover span {
   transform: translate(3px, -3px);
+}
+
+/* Resume Download Button */
+.navbar .resume-download-btn {
+  width: 46px;
+  height: 46px;
+  min-width: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: linear-gradient(135deg,
+      #8b5cf6,
+      #6d28d9);
+
+  color: #ffffff;
+  border: 1px solid rgba(196, 181, 253, 0.65);
+
+  box-shadow:
+    0 0 15px rgba(139, 92, 246, 0.25),
+    0 0 30px rgba(139, 92, 246, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navbar .resume-download-btn:hover {
+  background: linear-gradient(135deg,
+      #a78bfa,
+      #7c3aed);
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 0 20px rgba(139, 92, 246, 0.45),
+    0 0 40px rgba(139, 92, 246, 0.25);
+}
+
+.navbar .resume-download-btn svg {
+  transition: transform 0.3s ease;
+}
+
+.navbar .resume-download-btn:hover svg {
+  transform: translateY(2px);
+}
+
+/* Navbar spacing */
+.navbar {
+  justify-content: flex-start;
+}
+
+.nav-links {
+  margin-left: auto;
+}
+
+.navbar .resume-download-btn {
+  margin-left: 24px;
+  margin-right: 12px;
+}
+
+.navbar .nav-button {
+  margin-left: 0;
 }
