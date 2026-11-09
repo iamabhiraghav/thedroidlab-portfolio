@@ -1,6 +1,258 @@
 import './App.css'
 
 function App() {
+
+  const projects = [
+
+    {
+      id: "01",
+      title: "Allcargo Customer Portal",
+      category: "Logistics · Cross-platform",
+      featured: false,
+      visual: "portal",
+      icon: "◫",
+      status: "Currently Developing",
+      description:
+        "A cross-platform customer portal designed to bring retail and credit customer services into a unified digital experience.",
+      contribution:
+        "Currently involved in developing the customer portal and its user experience.",
+      technologies: [
+        "React Native",
+        "REST APIs",
+        "Google Stitch"
+      ]
+    },
+
+    {
+      id: "02",
+      title: "Gate Scan",
+      category: "Logistics · Bay Management",
+      featured: false,
+      visual: "gate",
+      icon: "▦",
+      description:
+        "A vehicle scanning and bay management application built to support gate operations and streamline vehicle movement within logistics facilities.",
+      contribution:
+        "Developed, deployed and continue to maintain the application.",
+      technologies: [
+        "Kotlin",
+        "Jetpack Compose",
+        "Android SDK",
+        "REST APIs",
+        "Third-party Libraries"
+      ]
+    },
+
+    {
+      id: "03",
+      title: "Allcargo Booking App",
+      category: "Logistics · Docket Booking",
+      featured: true,
+      visual: "booking",
+      icon: "⇧",
+      description:
+        "A mobile docket-booking application that enables retail and credit customers to manage their booking requirements through a digital interface.",
+      contribution:
+        "Developed, deployed and continue to maintain the application.",
+      technologies: [
+        "Kotlin",
+        "Jetpack Compose",
+        "Android SDK",
+        "REST APIs",
+        "Third-party Libraries"
+      ]
+    },
+
+    {
+      id: "04",
+      title: "Mental Health App",
+      category: "Healthcare · Accessibility",
+      featured: false,
+      visual: "mental",
+      icon: "♡",
+      description:
+        "A specialised mental healthcare application designed to support specially abled patients through a focused and accessible mobile experience.",
+      contribution:
+        "Contributed to Android application development and integration of supporting services.",
+      technologies: [
+        "Java",
+        "Kotlin",
+        "SQLite",
+        "Android SDK",
+        "REST APIs",
+        "Third-party Libraries"
+      ]
+    },
+
+    {
+      id: "05",
+      title: "Google Play Partnership",
+      category: "Payments · Rewards",
+      featured: false,
+      visual: "google",
+      icon: "G",
+      description:
+        "Contributed to payment and rewards-related functionality within a Google Play partnership project.",
+      contribution:
+        "Worked on partner-facing initiatives involving platforms such as Uber, YouTube and Discord.",
+      technologies: [
+        "Payment Integration",
+        "Rewards",
+        "Partner Platforms"
+      ]
+    },
+
+    {
+      id: "06",
+      title: "GTI-GIS",
+      category: "GPS & GIS · Enterprise Mobility",
+      featured: true,
+      visual: "gis",
+      icon: "⌖",
+      description:
+        "Integrated GPS and GIS capabilities into existing enterprise solutions, enabling location-based operations and mapping workflows for large organisations.",
+      contribution:
+        "Worked on GPS-GIS integration for enterprise clients including Indian Oil and GAIL India Limited.",
+      technologies: [
+        "Java",
+        "Android SDK",
+        "SQLite",
+        "Open Map",
+        "Android Architecture"
+      ]
+    },
+
+    {
+      id: "07",
+      title: "Prescription Pad",
+      category: "Healthcare · Digital Health",
+      featured: true,
+      visual: "health",
+      icon: "✚",
+      description:
+        "A digital prescription management solution featuring tele-consultation capabilities and MIS reporting to support healthcare professionals and clinical workflows.",
+      contribution:
+        "Worked on solutions delivered to government and non-government healthcare clients.",
+      technologies: [
+        "Java",
+        "Kotlin",
+        "SQLite",
+        "Android SDK",
+        "REST APIs",
+        "Third-party Libraries"
+      ]
+    },
+  ]
+
+
+  const experiences = [
+    {
+      id: "01",
+      period: "SEPT 2024 — PRESENT",
+      company: "Connect Icon Pvt. Ltd.",
+      client: "Allcargo Gati Ltd. · Client",
+      role: "Senior Mobile Developer",
+      location: "Gurgaon, Haryana",
+      current: true,
+      icon: "✦",
+      accent: "current",
+      highlights: [
+        "Serving as an Mobile Developer with the Allcargo Gati Team, focusing on application development and maintenance.",
+        "Designed, developed and deployed a full-stack Android application for a logistics platform.",
+        "Developing Android applications using Kotlin and Jetpack Compose.",
+        "Currently working on developing a mobile application using React Native Expo."
+      ],
+      technologies: [
+        "Kotlin",
+        "Jetpack Compose",
+        "Android",
+        "React Native",
+        "Expo",
+        "AI",
+        "Figma",
+        "Google Stitch",
+        "Room",
+        "REST API",
+        "Postgres",
+        "Vite"
+      ]
+    },
+    {
+      id: "02",
+      period: "OCT 2022 — FEB 2024",
+      company: "Accenture ",
+      client: "Google · Client",
+      role: "Senior Android Developer",
+      team: "Google Tech Consulting Team",
+      location: "Gurgaon, Haryana",
+      current: false,
+      icon: "G",
+      accent: "google",
+      highlights: [
+        "Engaged with the Google Tech Consulting Team, addressing developer queries related to code, implementation and libraries.",
+        "Worked on various Google products under the Play Partnership Project.",
+        "Used Java, Kotlin, Android SDK and Android architecture to build scalable and maintainable codebases.",
+        "Conducted code reviews, debugging and troubleshooting to support high-quality deliverables and timely project completion."
+      ],
+      technologies: [
+        "Java",
+        "Kotlin",
+        "Android SDK",
+        "Android Architecture",
+        "Code Reviews"
+      ]
+    },
+    {
+      id: "03",
+      period: "OCT 2015 — OCT 2022",
+      company: "Compurx Infotech Pvt. Ltd.",
+      client: "Healthcare · Government & Private Clients",
+      role: "Senior Android Developer",
+      location: "New Delhi",
+      current: false,
+      icon: "✚",
+      accent: "health",
+      highlights: [
+        "Designed, developed and implemented full-stack Android applications focused on healthcare, EHR, academics and other domains.",
+        "Built applications using Java, Android SDK and Android architecture.",
+        "Collaborated with government and non-government clients, including Uttarakhand, J&K and Jharkhand Governments on healthcare projects involving EHR integration.",
+        "Worked with designers, product managers and QA engineers to bring product ideas to life.",
+        "Applied code quality, performance optimisation and UI/UX best practices to improve app ratings and user satisfaction.",
+        "Led and mentored developers, encouraging a collaborative environment and technical excellence."
+      ],
+      technologies: [
+        "Java",
+        "Android SDK",
+        "Android Architecture",
+        "Healthcare",
+        "EHR",
+        "Team Leadership"
+      ]
+    },
+    {
+      id: "04",
+      period: "JUN 2014 — OCT 2015",
+      company: "GTI Infotel Ltd.",
+      client: "GPS & GIS Solutions",
+      role: "System Engineer",
+      location: "Noida, Uttar Pradesh",
+      current: false,
+      icon: "⌖",
+      accent: "gis",
+      highlights: [
+        "Designed and implemented a GPS-based monitoring system across multiple locations to enhance tracking capabilities.",
+        "Collaborated with cross-functional teams to integrate new technologies and solutions.",
+        "Provided technical guidance and mentorship to junior team members, fostering continuous learning and development."
+      ],
+      technologies: [
+        "GPS",
+        "GIS",
+        "Monitoring Systems",
+        "Team Collaboration"
+      ]
+    }
+  ]
+
   return (
     <div className="portfolio">
 
@@ -340,19 +592,540 @@ function App() {
 
       </section>
 
-      <section id="skills" className="placeholder-section">
-        <span>02 / SKILLS</span>
-        <h2>Technologies I work with.</h2>
+
+      {/* Skills Section */}
+      <section id="skills" className="skills-section">
+
+        <div className="skills-divider"></div>
+
+        {/* Section Heading */}
+        <div className="skills-heading">
+          <h2>
+            The tools behind
+            <br />
+            <span className="gradient-text">what I build.</span>
+          </h2>
+
+          <p>
+            A collection of technologies, frameworks and tools I've
+            worked with to build mobile applications, scalable systems
+            and modern digital experiences.
+          </p>
+        </div>
+
+        {/* Technology Groups */}
+        <div className="skills-grid">
+
+          {/* Mobile & Android */}
+          <article className="skill-card skill-card-android">
+            <div className="skill-card-header">
+              <div className="skill-category-icon">▣</div>
+              <span className="skill-card-index">01</span>
+            </div>
+
+            <div className="skill-card-title">
+              <h3>Mobile & Android</h3>
+              <p>Native development and Android ecosystem</p>
+            </div>
+
+            <div className="skill-items">
+              {[
+                ["A", "Android"],
+                ["⌘", "Android Architecture"],
+                ["▣", "Android SDK"],
+                ["J", "Java"],
+                ["K", "Kotlin"],
+                ["◈", "Jetpack Compose"],
+                ["✦", "Jetpack Components"],
+                ["↻", "Kotlin Coroutines"],
+                ["D", "Dagger"],
+                ["▤", "Room Database"],
+                ["✓", "Unit Testing"]
+              ].map(([icon, name]) => (
+                <span className="skill-chip" key={name}>
+                  <span className="skill-chip-icon">{icon}</span>
+                  {name}
+                </span>
+              ))}
+            </div>
+
+            <div className="skill-card-footer">
+              <span>CORE SPECIALISATION</span>
+              <span className="skill-footer-dot"></span>
+            </div>
+          </article>
+
+          {/* Cross-platform & Web */}
+          <article className="skill-card skill-card-cross">
+            <div className="skill-card-header">
+              <div className="skill-category-icon">⌘</div>
+              <span className="skill-card-index">02</span>
+            </div>
+
+            <div className="skill-card-title">
+              <h3>Cross-platform & Web</h3>
+              <p>Building experiences across platforms</p>
+            </div>
+
+            <div className="skill-items">
+              {[
+                ["⚛", "React Native"],
+                ["◉", "Expo"],
+                ["V", "Vite"]
+              ].map(([icon, name]) => (
+                <span className="skill-chip" key={name}>
+                  <span className="skill-chip-icon">{icon}</span>
+                  {name}
+                </span>
+              ))}
+            </div>
+
+            <div className="skill-card-footer">
+              <span>CROSS-PLATFORM DEVELOPMENT</span>
+              <span className="skill-footer-dot"></span>
+            </div>
+          </article>
+
+          {/* Architecture & APIs */}
+          <article className="skill-card skill-card-api">
+            <div className="skill-card-header">
+              <div className="skill-category-icon">⌘</div>
+              <span className="skill-card-index">03</span>
+            </div>
+
+            <div className="skill-card-title">
+              <h3>Architecture & APIs</h3>
+              <p>Application structure and communication</p>
+            </div>
+
+            <div className="skill-items">
+              {[
+                ["◇", "MVC / MVVM"],
+                ["↔", "RESTful API"],
+                ["⌘", "GraphQL API"]
+              ].map(([icon, name]) => (
+                <span className="skill-chip" key={name}>
+                  <span className="skill-chip-icon">{icon}</span>
+                  {name}
+                </span>
+              ))}
+            </div>
+
+            <div className="skill-card-footer">
+              <span>APPLICATION ENGINEERING</span>
+              <span className="skill-footer-dot"></span>
+            </div>
+          </article>
+
+          {/* Data & Cloud */}
+          <article className="skill-card skill-card-cloud">
+            <div className="skill-card-header">
+              <div className="skill-category-icon">◈</div>
+              <span className="skill-card-index">04</span>
+            </div>
+
+            <div className="skill-card-title">
+              <h3>Data & Cloud</h3>
+              <p>Storage, backend services and cloud platforms</p>
+            </div>
+
+            <div className="skill-items">
+              {[
+                ["▤", "SQL / SQLite"],
+                ["✦", "Firebase"],
+                ["◉", "Supabase"],
+                ["☁", "Google Cloud"]
+              ].map(([icon, name]) => (
+                <span className="skill-chip" key={name}>
+                  <span className="skill-chip-icon">{icon}</span>
+                  {name}
+                </span>
+              ))}
+            </div>
+
+            <div className="skill-card-footer">
+              <span>BACKEND & INFRASTRUCTURE</span>
+              <span className="skill-footer-dot"></span>
+            </div>
+          </article>
+
+          {/* UI/UX & Design */}
+          <article className="skill-card skill-card-design">
+            <div className="skill-card-header">
+              <div className="skill-category-icon">✎</div>
+              <span className="skill-card-index">05</span>
+            </div>
+
+            <div className="skill-card-title">
+              <h3>UI/UX & Design</h3>
+              <p>Designing intuitive digital experiences</p>
+            </div>
+
+            <div className="skill-items">
+              {[
+                ["✧", "App Designing"],
+                ["F", "Figma"],
+                ["✦", "Google Stitch"]
+              ].map(([icon, name]) => (
+                <span className="skill-chip" key={name}>
+                  <span className="skill-chip-icon">{icon}</span>
+                  {name}
+                </span>
+              ))}
+            </div>
+
+            <div className="skill-card-footer">
+              <span>DESIGN & PROTOTYPING</span>
+              <span className="skill-footer-dot"></span>
+            </div>
+          </article>
+
+          {/* Engineering & AI */}
+          <article className="skill-card skill-card-ai">
+            <div className="skill-card-header">
+              <div className="skill-category-icon">✧</div>
+              <span className="skill-card-index">06</span>
+            </div>
+
+            <div className="skill-card-title">
+              <h3>Engineering & AI</h3>
+              <p>Development workflows and emerging technologies</p>
+            </div>
+
+            <div className="skill-items">
+              {[
+                ["⇄", "CI/CD Pipeline"],
+                ["⌘", "Git"],
+                ["✧", "AI Integration"],
+                ["◈", "AI Agents"]
+              ].map(([icon, name]) => (
+                <span className="skill-chip" key={name}>
+                  <span className="skill-chip-icon">{icon}</span>
+                  {name}
+                </span>
+              ))}
+            </div>
+
+            <div className="skill-card-footer">
+              <span>BUILDING WHAT'S NEXT</span>
+              <span className="skill-footer-dot"></span>
+            </div>
+          </article>
+
+        </div>
+
+        {/* Bottom Note */}
+        <div className="skills-bottom-note">
+          <span className="status-dot"></span>
+          <p>Learning, experimenting and evolving with technology.</p>
+          <span className="skills-bottom-sparkle">✦</span>
+        </div>
+
       </section>
 
-      <section id="experience" className="placeholder-section">
-        <span>03 / EXPERIENCE</span>
-        <h2>My professional journey.</h2>
+
+
+      {/* Experience Section */}
+      <section id="experience" className="experience-section">
+
+        <div className="experience-divider"></div>
+
+        {/* Section Heading */}
+        <div className="experience-heading">
+          <span className="experience-eyebrow">03 / EXPERIENCE</span>
+
+          <h2>
+            A journey built on
+            <br />
+            <span className="gradient-text">experience & innovation.</span>
+          </h2>
+
+          <p>
+            From GPS-based monitoring systems to enterprise mobility,
+            healthcare platforms and modern cross-platform applications —
+            here's how my professional journey has evolved.
+          </p>
+        </div>
+
+        {/* Career Summary */}
+        <div className="experience-summary">
+          <div className="experience-summary-item">
+            <strong>2014</strong>
+            <span>Career Started</span>
+          </div>
+
+          <div className="experience-summary-line"></div>
+
+          <div className="experience-summary-item">
+            <strong>4</strong>
+            <span>Professional Roles</span>
+          </div>
+
+          <div className="experience-summary-line"></div>
+
+          <div className="experience-summary-item">
+            <strong>Multiple</strong>
+            <span>Industry Domains</span>
+          </div>
+        </div>
+
+        {/* Career Timeline */}
+        <div className="experience-timeline">
+
+          {experiences.map((experience) => (
+            <article
+              className={`experience-card experience-${experience.accent} ${experience.current ? "experience-current" : ""
+                }`}
+              key={experience.id}
+            >
+
+              {/* Timeline Marker */}
+              <div className="experience-timeline-marker">
+                <span>{experience.icon}</span>
+              </div>
+
+              {/* Experience Card */}
+              <div className="experience-card-inner">
+
+                <div className="experience-card-top">
+                  <div className="experience-period">
+                    <span className="experience-period-dot"></span>
+                    {experience.period}
+                  </div>
+
+                  {experience.current && (
+                    <span className="experience-current-label">
+                      <span className="status-dot"></span>
+                      CURRENT ROLE
+                    </span>
+                  )}
+                </div>
+
+                <div className="experience-company-row">
+                  <div>
+                    <h3>{experience.company}</h3>
+                    <p className="experience-client">{experience.client}</p>
+                  </div>
+
+                  <span className="experience-number">
+                    {experience.id}
+                  </span>
+                </div>
+
+                <div className="experience-role-row">
+                  <span className="experience-role">
+                    {experience.role}
+                  </span>
+
+                  <span className="experience-location">
+                    <span>⌖</span>
+                    {experience.location}
+                  </span>
+                </div>
+
+                {experience.team && (
+                  <div className="experience-team">
+                    <span>✦</span>
+                    {experience.team}
+                  </div>
+                )}
+
+                <div className="experience-card-divider"></div>
+
+                <div className="experience-highlights">
+                  <span className="experience-subheading">
+                    KEY RESPONSIBILITIES
+                  </span>
+
+                  <ul>
+                    {experience.highlights.map((highlight, index) => (
+                      <li key={index}>
+                        <span className="experience-bullet">✦</span>
+                        <p>{highlight}</p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="experience-technologies">
+                  <span className="experience-subheading">
+                    TECHNOLOGIES & EXPOSURE
+                  </span>
+
+                  <div className="experience-tags">
+                    {experience.technologies.map((technology) => (
+                      <span key={technology}>{technology}</span>
+                    ))}
+                  </div>
+                </div>
+
+              </div>
+            </article>
+          ))}
+
+        </div>
+
+        {/* Education */}
+        <div className="education-section">
+
+          <div className="education-heading">
+            <span className="experience-eyebrow">ACADEMIC BACKGROUND</span>
+            <h3>Education & qualifications.</h3>
+          </div>
+
+          <div className="education-grid">
+
+            <article className="education-card">
+              <div className="education-icon">◈</div>
+              <div>
+                <span className="education-year">JUNE 2018</span>
+                <h4>Master of Technology</h4>
+                <p>Software Engineering</p>
+                <span className="education-institute">
+                  MDU, Rohtak
+                </span>
+              </div>
+            </article>
+
+            <article className="education-card">
+              <div className="education-icon">⌘</div>
+              <div>
+                <span className="education-year">JUNE 2014</span>
+                <h4>Bachelor of Technology</h4>
+                <p>Electronics and Communication Engineering</p>
+                <span className="education-institute">
+                  MDU, Rohtak
+                </span>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
       </section>
 
-      <section id="projects" className="placeholder-section">
-        <span>04 / PROJECTS</span>
-        <h2>Things I've built.</h2>
+      {/* Projects Section */}
+      <section id="projects" className="projects-section">
+
+        <div className="section-divider"></div>
+
+        <div className="projects-heading">
+          <h2>
+            Building products,
+            <br />
+            <span className="gradient-text">solving real problems.</span>
+          </h2>
+
+          <p>
+            A selection of mobile applications and enterprise solutions
+            I've contributed to across healthcare, logistics, payments
+            and location intelligence.
+          </p>
+        </div>
+
+        <div className="projects-grid">
+
+          {projects.map((project) => (
+            <article
+              className={`project-card ${project.featured ? "project-featured" : ""} ${project.visual === "portal" ? "project-card-wide" : ""
+                }`}
+              key={project.id}
+            >
+
+              {/* Project Visual */}
+              <div className={`project-visual project-visual-${project.visual}`}>
+
+                <div className="project-visual-orb"></div>
+
+                <div className="project-visual-top">
+                  <span>PROJECT / {project.id}</span>
+                  <span className="project-visual-symbol">
+                    {project.icon}
+                  </span>
+                </div>
+
+                <div className="project-visual-center">
+                  <span className="project-visual-icon">
+                    {project.icon}
+                  </span>
+                  <span className="project-visual-title">
+                    {project.title}
+                  </span>
+                  <span className="project-visual-category">
+                    {project.category}
+                  </span>
+                </div>
+
+                <div className="project-visual-bottom">
+                  <span>THE DROID LAB</span>
+                  <span>✦</span>
+                </div>
+
+              </div>
+
+              {/* Project Details */}
+              <div className="project-content">
+
+                <div className="project-title-row">
+                  <div>
+                    <span className="project-number">
+                      {project.id} / PROJECT
+                    </span>
+
+                    <h3>{project.title}</h3>
+                  </div>
+
+                  {project.status ? (
+                    <span className="project-status">
+                      <span className="status-dot"></span>
+                      {project.status}
+                    </span>
+                  ) : project.featured ? (
+                    <span className="project-featured-label">
+                      FEATURED
+                    </span>
+                  ) : null}
+                </div>
+
+                <p className="project-description">
+                  {project.description}
+                </p>
+
+                <div className="project-contribution">
+                  <span>MY CONTRIBUTION</span>
+                  <p>{project.contribution}</p>
+                </div>
+
+                <div className="project-tech-heading">
+                  TECHNOLOGIES & EXPERTISE
+                </div>
+
+                <div className="project-tech-tags">
+                  {project.technologies.map((technology) => (
+                    <span key={technology}>{technology}</span>
+                  ))}
+                </div>
+
+                <div className="project-card-footer">
+                  <span>{project.category}</span>
+                  <span className="project-arrow">↗</span>
+                </div>
+
+              </div>
+
+            </article>
+          ))}
+
+        </div>
+
+        <div className="projects-footer">
+          <span className="status-dot"></span>
+          <p>
+            And many more applications, integrations and digital solutions
+            built along the way.
+          </p>
+        </div>
+
       </section>
 
 
